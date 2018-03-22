@@ -12,7 +12,7 @@
 
 <p>
   <strong>Avatar:</strong>
-  <% if @user.avatar != nil %>
+  <% if @user.avatar? %>
   <%= image_tag @user.avatar.url %>
   <% end %>
 </p>
